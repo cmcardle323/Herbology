@@ -7,34 +7,40 @@
 <script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
 <script type="text/javascript"
 	src="/webjars/bootstrap/js/bootstrap.min.js"></script>
-	
+
 </head>
-<body style="background-image:url('https://d2gg9evh47fn9z.cloudfront.net/thumb_COLOURBOX7450013.jpg'); height:100vh;width:100vw;font-size:100%;display:flex;flex-direction:column;align-items:center;">
+<body
+	style="background-image: url('https://d2gg9evh47fn9z.cloudfront.net/thumb_COLOURBOX7450013.jpg'); height: 100vh; width: 100vw; font-size: 100%; display: flex; flex-direction: column; align-items: center;text-align:center;">
 
-<h1>Plant Info:</h1>
-<h1 th:text="${plant.name}"></h1>
-<img th:src="@{${pic}}">
-
-<p th:text="${plant.id}"></p>
-<p th:text="${plant.species}"></p>
-<p th:text="${plant.light}"></p>
-<p th:text="${plant.water}"></p>
-<p th:text="${plant.soil}"></p>
-<p th:text="${plant.temperature}"></p>
-<p th:text="${plant.humidity}"></p>
-
-
-<!-- FOOTER -->
-	<div class="site-footer">
-		<div class=footer-container>
-			<a href="/users">Home</a>
+	<div style="width:800px;background-color:white;border: solid #22391c 2px;border-radius: 50px;">
+		<h1>Plant Info:</h1>
+		<h1 th:text="${plant.name}"></h1>
+		<img style="height: 500px" th:src="@{${pic}}">
+		<div style="display:flex;flex-direction: row;justify-content: space-between; align-items:center;">
+			<h2 style="margin-left:30%;">Species:</h2>
+			<p style="margin-right:30%;" th:text="${plant.species}"></p>
 		</div>
-		<div class=footer-container>
-			<a href="/about">About</a>
+		<div style="display:flex;flex-direction: row;justify-content: space-between; align-items:center;">
+			<h2 style="margin-left:30%;">Light Level:</h2>
+			<p style="margin-right:30%;" th:text="${plant.light}"></p>
 		</div>
-		<div class=footer-container>
-			<a href="/contact">Contact</a>
+		<div style="display:flex;flex-direction: row;justify-content: space-between; align-items:center;">
+			<h2 style="margin-left:30%;">Water Cycle:</h2>
+			<p style="margin-right:30%;" th:text="${plant.water}"></p>
+		</div>
+		<div style="display:flex;flex-direction: row;justify-content: space-between; align-items:center;">
+			<h2 style="margin-left:30%;">Soil Type:</h2>
+			<p style="margin-right:30%;" th:text="${plant.soil}"></p>
+		</div>
+		<div style="display:flex;flex-direction: row;justify-content: space-between; align-items:center;">
+			<h2 style="margin-left:30%;">Temperature:</h2>
+			<p style="margin-right:30%;" th:text="${plant.temperature}"></p>
+		</div>
+		<div style="display:flex;flex-direction: row;justify-content: space-between; align-items:center;">
+			<h2 style="margin-left:30%;">Humidity:</h2>
+			<p style="margin-right:30%;" th:text="${plant.humidity}"></p>
 		</div>
 	</div>
+
 </body>
 </html>

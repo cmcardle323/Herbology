@@ -22,6 +22,32 @@ body {
 	text-align: center;
 }
 
+.new-plant {
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	border: solid #22391c 2px;
+	border-radius: 50px;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	background-color:white;
+	width:500px;
+	align-items: center;
+}
+
+.about {
+	font-size:150%;
+	background-color:white;
+	width:60%;
+	margin-top: 20px;
+	margin-right:auto;
+	margin-left:auto;
+	border: solid #22391c 2px;
+	border-radius: 50px;
+	text-align:center;
+}
+
 /*HEADER*/
 .site-header{
 	display: flex;

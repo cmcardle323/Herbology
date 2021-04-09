@@ -4,32 +4,13 @@
 <head>
 <meta charset="utf-8" />
 <title>Create New Plant</title>
+<link rel="stylesheet" type="text/css" href="css/styles.css" />
 </head>
 <body>
-    <div align="center">
+    <div class="new-plant">
         <h1>Create New Plant</h1>
         <br />
         <form action="#" th:action="@{/save}" th:object="${plant}" method="post">
- 			
- 			<table class="database-plant-table">
- 				<thead>
- 					<tr>
-						<th>Name</th>
-						<th>Species</th>
-						<th>Light Level</th>
-						<th>Water Level</th>
-						<th>Soil Type</th>
-						<th>Temperature</th>
-						<th>Humidity</th>
- 					</tr>
- 				</thead>
- 				<tbody>
- 					<tr>
- 						<td></td>
- 					</tr>
- 				</tbody>
- 			</table>
- 			
  			
             <table border="0" cellpadding="10">
                 <tr>
@@ -71,19 +52,5 @@
             </table>
         </form>
     </div>
-    
-<!-- FOOTER -->
-	<div class="site-footer">
-		<div class=footer-container>
-			<a href="/users">Home</a>
-		</div>
-		<div class=footer-container>
-			<a href="/about">About</a>
-		</div>
-		<div class=footer-container>
-			<a href="/contact">Contact</a>
-		</div>
-	</div>
-
 </body>
 </html>
