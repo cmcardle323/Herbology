@@ -10,32 +10,32 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "plants")
 public class Plant {
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	
+
 	@Column(nullable = false)
 	private String name;
-	
+
 	@Column(nullable = false)
 	private String species;
-	
+
 	@Column(nullable = false)
 	private String light;
-	
+
 	@Column(nullable = false)
 	private String water;
-	
+
 	@Column(nullable = false)
 	private String soil;
-	
+
 	@Column(nullable = false)
 	private String temperature;
-	
+
 	@Column(nullable = false)
 	private String humidity;
-	
+
 	public Plant() {
 		super();
 	}

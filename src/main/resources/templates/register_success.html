@@ -1,16 +1,22 @@
+<!--Web Security based from example below;
+https://www.codejava.net/frameworks/spring-boot/user-registration-and-login-tutorial
+Code adapted for my project -->
+
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="ISO-8859-1">
-    <title>Registration Success</title>
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+<meta charset="ISO-8859-1">
+<title>Registration Success</title>
+<link rel="stylesheet" type="text/css" href="css/styles.css" />
 </head>
 <body>
-    <div class="about">
-        <h3>You have signed up successfully!</h3>
-        <h4><a th:href="@{/login}">Click here to Login</a></h4>
-    </div>
-   <!-- FOOTER -->
+	<div class="about">
+		<h3>You have signed up successfully!</h3>
+		<h4>
+			<a th:href="@{/login}">Click here to Login</a>
+		</h4>
+	</div>
+	<!-- FOOTER -->
 	<div class="site-footer">
 		<div class=footer-container>
 			<a href="/users">Home</a>
@@ -21,6 +27,6 @@
 		<div class=footer-container>
 			<a href="/contact">Contact</a>
 		</div>
-	</div>  
+	</div>
 </body>
 </html>

@@ -114,7 +114,7 @@ public class AppController {
 		User currentUser = userServ.findByEmail(username);
 		System.out.println(currentUser.getEmail());
 		List<Plant> start = currentUser.getPlantList();
-	
+
 		boolean match = false;
 		while (!match) {
 			for (int i = 0; i < start.size(); i++) {
@@ -145,7 +145,7 @@ public class AppController {
 	public String showAboutPage(Model model) {
 		return "about";
 	}
-	
+
 	@RequestMapping("/plant/{id}")
 	public ModelAndView viewPlant(@PathVariable(name = "id") int id, Model model) {
 		String pic = "/images/plant-images/" + id + ".jpg";
@@ -154,6 +154,6 @@ public class AppController {
 		model.addAttribute("plant", plant);
 		ModelAndView mav = new ModelAndView("plant");
 		return mav;
-		
+
 	}
 }

@@ -50,11 +50,15 @@
 					</thead>
 					<tbody>
 						<tr th:each="plant : ${listUsersPlants}">
-							<td style=width:60px;><a th:href="${'/plant/' + plant.id}">View</a></td>
-							<td style=width:150px; th:text="${plant.name}">Name</td>
-							<td style=width:150px; th:text="${plant.light}">Light Level</td>
-							<td style=width:150px; th:text="${plant.water}">Water Cycle</td>
-							<td style=width:60px;><a th:href="${'/delete/' + plant.id + '/' + username}">Remove</a></td>
+							<td style="width: 60px;"><a
+								th:href="${'/plant/' + plant.id}">View</a></td>
+							<td style="width: 150px;" th:text="${plant.name}">Name</td>
+							<td style="width: 150px;" th:text="${plant.light}">Light
+								Level</td>
+							<td style="width: 150px;" th:text="${plant.water}">Water
+								Cycle</td>
+							<td style="width: 60px;"><a
+								th:href="${'/delete/' + plant.id + '/' + username}">Remove</a></td>
 						</tr>
 					</tbody>
 				</table>
@@ -84,14 +88,19 @@
 					</thead>
 					<tbody>
 						<tr th:each="plant : ${listPlants}">
-							<td style=width:70px;><a th:href="${'/plant/' + plant.id}">View</a></td>
-							<td style=width:250px; th:text="${plant.name}">Name</td>
-							<td style=width:150px; th:text="${plant.light}">Light Level</td>
-							<td style=width:150px; th:text="${plant.water}">Water Cycle</td>
-							<td style=width:150px; th:text="${plant.soil}">Soil Type</td>
-							<td style=width:100px; th:text="${plant.temperature}">Temperature</td>
-							<td style=width:100px; th:text="${plant.humidity}">Humidity</td>
-							<td style=width:100px;><a th:href="${'/edit/' + plant.id}">Edit</a> &nbsp;&nbsp;&nbsp; <a th:href="${'/track/' + plant.id + '/' + username}">Track</a></td>
+							<td style="width: 70px;"><a
+								th:href="${'/plant/' + plant.id}">View</a></td>
+							<td style="width: 250px;" th:text="${plant.name}">Name</td>
+							<td style="width: 150px;" th:text="${plant.light}">Light
+								Level</td>
+							<td style="width: 150px;" th:text="${plant.water}">Water
+								Cycle</td>
+							<td style="width: 150px;" th:text="${plant.soil}">Soil Type</td>
+							<td style="width: 100px;" th:text="${plant.temperature}">Temperature</td>
+							<td style="width: 100px;" th:text="${plant.humidity}">Humidity</td>
+							<td style="width: 100px;"><a
+								th:href="${'/edit/' + plant.id}">Edit</a> &nbsp;&nbsp;&nbsp; <a
+								th:href="${'/track/' + plant.id + '/' + username}">Track</a></td>
 						</tr>
 					</tbody>
 				</table>
@@ -112,6 +121,6 @@
 			<a href="/contact">Contact</a>
 		</div>
 	</div>
-	
+
 </body>
 </html>

@@ -15,19 +15,19 @@ public class PlantService {
 
 	@Autowired
 	private PlantRepository plantRepo;
-	
+
 	public List<Plant> listAll() {
 		return plantRepo.findAll();
 	}
-	
+
 	public void save(Plant plant) {
 		plantRepo.save(plant);
 	}
-	
+
 	public Plant get(long id) {
 		return plantRepo.findById(id).get();
 	}
-	
+
 	public void delete(long id) {
 		plantRepo.deleteById(id);
 	}

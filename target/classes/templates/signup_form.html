@@ -1,3 +1,7 @@
+<!--Web Security based from example below;
+https://www.codejava.net/frameworks/spring-boot/user-registration-and-login-tutorial
+Code adapted for my project -->
+
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
@@ -28,7 +32,7 @@
 					<label>Password: </label>
 					<div>
 						<input type="password" th:field="*{password}" class="form-control"
-							required/>
+							required />
 					</div>
 				</div>
 
@@ -36,7 +40,7 @@
 					<label>First Name: </label>
 					<div>
 						<input type="text" th:field="*{firstName}" class="form-control"
-							required/>
+							required />
 					</div>
 				</div>
 
@@ -44,17 +48,17 @@
 					<label>Last Name: </label>
 					<div>
 						<input type="text" th:field="*{lastName}" class="form-control"
-							required/>
+							required />
 					</div>
 				</div>
 
-				<div style="margin-bottom:20px;">
+				<div style="margin-bottom: 20px;">
 					<button type="submit">Sign Up</button>
 				</div>
 			</div>
 		</form>
 	</div>
-	
+
 	<!-- FOOTER -->
 	<div class="site-footer">
 		<div class=footer-container>

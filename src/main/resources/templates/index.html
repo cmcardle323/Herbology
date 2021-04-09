@@ -9,7 +9,7 @@
 	src="/webjars/bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body>
-<!-- HEADER -->
+	<!-- HEADER -->
 	<div class=site-header>
 		<div class="site-logo-container">
 			<div class="logo-image-container">
@@ -17,29 +17,32 @@
 			</div>
 			<p id="site-title">erbology!</p>
 		</div>
-		<div class="welcome-msg">
-
-		</div>
-		<div class="budge">
-				
-		</div>
+		<div class="welcome-msg"></div>
+		<div class="budge"></div>
 	</div>
 
 
 
-	<div class="site-content-area" style=flex-direction:column;justify-content:flex-start;align-items:center;>
+	<div class="site-content-area"
+		style="flex-direction: column; justify-content: flex-start; align-items: center;">
 		<div class="link-button">
-			<h2><a th:href="@{/users}">Plant Tracker</a></h2>
+			<h2>
+				<a th:href="@{/users}">Plant Tracker</a>
+			</h2>
 		</div>
 		<div class="link-button">
-			<h2><a th:href="@{/register}">Register</a></h2>
+			<h2>
+				<a th:href="@{/register}">Register</a>
+			</h2>
 		</div>
 		<div class="link-button">
-			<h2><a th:href="@{/login}">Login</a></h2>
+			<h2>
+				<a th:href="@{/login}">Login</a>
+			</h2>
 		</div>
 	</div>
-	
-	
+
+
 	<!-- FOOTER -->
 	<div class="site-footer">
 		<div class=footer-container>
