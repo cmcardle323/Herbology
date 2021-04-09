@@ -148,6 +148,8 @@ public class AppController {
 	
 	@RequestMapping("/plant/{id}")
 	public ModelAndView viewPlant(@PathVariable(name = "id") int id, Model model) {
+		String pic = "/images/plant-images/" + id + ".jpg";
+		model.addAttribute("pic", pic);
 		Plant plant = plantServ.get(id);
 		model.addAttribute("plant", plant);
 		ModelAndView mav = new ModelAndView("plant");

@@ -3,12 +3,18 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Plant Info</title>
-<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+<link rel="stylesheet" type="text/css" href="css/styles.css" />
+<script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+<script type="text/javascript"
+	src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+	
 </head>
-<body>
+<body style="background-image:url('https://d2gg9evh47fn9z.cloudfront.net/thumb_COLOURBOX7450013.jpg'); height:100vh;width:100vw;font-size:100%;display:flex;flex-direction:column;align-items:center;">
 
 <h1>Plant Info:</h1>
 <h1 th:text="${plant.name}"></h1>
+<img th:src="@{${pic}}">
+
 <p th:text="${plant.id}"></p>
 <p th:text="${plant.species}"></p>
 <p th:text="${plant.light}"></p>
@@ -19,16 +25,16 @@
 
 
 <!-- FOOTER -->
-<div class="site-footer">
-	<div class=footer-container>
-		<a href="/users">Home</a>
+	<div class="site-footer">
+		<div class=footer-container>
+			<a href="/users">Home</a>
+		</div>
+		<div class=footer-container>
+			<a href="/about">About</a>
+		</div>
+		<div class=footer-container>
+			<a href="/contact">Contact</a>
+		</div>
 	</div>
-	<div class=footer-container>
-		<a href="/about">About</a>
-	</div>
-	<div class=footer-container>
-		<a href="/contact">Contact</a>
-	</div>
-</div>
 </body>
 </html>

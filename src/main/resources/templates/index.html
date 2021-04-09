@@ -2,26 +2,44 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="ISO-8859-1">
-<title>Welcome to CodeJava Home</title>
-<link rel="stylesheet" type="text/css"
-	href="/webjars/bootstrap/css/bootstrap.min.css" />
+<title>Herbology!</title>
+<link rel="stylesheet" type="text/css" href="css/styles.css" />
 <script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
 <script type="text/javascript"
 	src="/webjars/bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<div class="container text-center">
-		<h1>Welcome to CodeJava.net</h1>
-		<h3>
-			<a th:href="@{/users}">List of Users</a>
-		</h3>
-		<h3>
-			<a th:href="@{/register}">Register</a>
-		</h3>
-		<h3>
-			<a th:href="@{/login}">Login</a>
-		</h3>
+<!-- HEADER -->
+	<div class=site-header>
+		<div class="site-logo-container">
+			<div class="logo-image-container">
+				<img id="site-logo-img" src="images/site-logo.png">
+			</div>
+			<p id="site-title">erbology!</p>
+		</div>
+		<div class="welcome-msg">
+
+		</div>
+		<div class="budge">
+				
+		</div>
 	</div>
+
+
+
+	<div class="site-content-area" style=flex-direction:column;justify-content:flex-start;align-items:center;>
+		<div class="link-button">
+			<h2><a th:href="@{/users}">Plant Tracker</a></h2>
+		</div>
+		<div class="link-button">
+			<h2><a th:href="@{/register}">Register</a></h2>
+		</div>
+		<div class="link-button">
+			<h2><a th:href="@{/login}">Login</a></h2>
+		</div>
+	</div>
+	
+	
 	<!-- FOOTER -->
 	<div class="site-footer">
 		<div class=footer-container>
